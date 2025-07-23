@@ -1,0 +1,236 @@
+[
+
+  {
+    "id": "blog-001",
+    "title": "Getting Started with Microsoft Azure",
+    "heroImage": "https://azurelessons.com/wp-content/uploads/2020/04/How-does-Microsoft-Azure-Works-scaled.jpg",
+    "coverImage": "https://azurelessons.com/wp-content/uploads/2020/04/How-does-Microsoft-Azure-Works-scaled.jpg",
+    "description": "A comprehensive guide to Microsoft Azure's cloud computing platform and services.",
+    "author": {
+      "name": "John Smith",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070",
+      "role": "Senior Cloud Architect",
+      "bio": "Cloud enthusiast and Microsoft Azure expert with 10+ years of experience in cloud infrastructure.",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/johnsmith",
+        "twitter": "https://twitter.com/johnsmith",
+        "github": "https://github.com/johnsmith"
+      }
+    },
+    "category": "Cloud Computing",
+    "readTime": "8 min read",
+    "date": "Mar 15, 2024",
+    "lastUpdated": "Apr 2, 2024",
+    "tags": ["Microsoft", "Azure", "Cloud", "PaaS", "IaaS"],
+    "stats": {
+      "views": 1245,
+      "likes": 89,
+      "comments": 23
+    },
+    "resources": [
+      { "label": "Azure Documentation", "url": "https://docs.microsoft.com/azure", "icon": "book" },
+      { "label": "Azure Pricing Calculator", "url": "https://azure.microsoft.com/pricing/calculator/", "icon": "calculator" },
+      { "label": "Azure Free Account", "url": "https://azure.microsoft.com/free/", "icon": "gift" }
+    ],
+    "relatedPosts": [
+      { 
+        "id": "blog-003", 
+        "title": "Cloud Computing: AWS vs Azure vs Google Cloud", 
+        "image": "https://example.com/cloud-comparison.jpg",
+        "readTime": "12 min read"
+      },
+      {
+        "id": "blog-015",
+        "title": "Azure Kubernetes Service: A Complete Guide",
+        "image": "https://example.com/aks-guide.jpg",
+        "readTime": "15 min read"
+      }
+    ],
+    "content": [
+      { 
+        "type": "paragraph", 
+        "text": "Microsoft Azure is a cloud computing platform developed by Microsoft, offering solutions like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)." 
+      },
+      { 
+        "type": "paragraph", 
+        "text": "It supports various programming languages, frameworks, and operating systems, making it one of the most versatile cloud platforms available today." 
+      },
+      { 
+        "type": "image", 
+        "url": "https://example.com/azure-architecture.jpg",
+        "alt": "Azure Architecture Diagram",
+        "caption": "Azure's global infrastructure consists of 60+ regions worldwide"
+      },
+      { 
+        "type": "paragraph", 
+        "text": "Azure offers over 200 products and services to build, run, and manage applications through Microsoft's global network of data centers." 
+      },
+      {
+        "type": "quote",
+        "text": "Azure's hybrid capabilities are unmatched in the cloud industry, allowing seamless integration between on-premises and cloud environments.",
+        "author": "Satya Nadella"
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "text": "az group create --name MyResourceGroup --location eastus"
+      }
+    ]
+  },
+
+  {
+    "id": "blog-002",
+    "title": "Machine Learning: A Beginner's Guide",
+    "heroImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070",
+    "description": "Discover the basics of machine learning and how to implement your first ML model using Python.",
+    "author": {
+      "name": "Sarah Johnson",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2070",
+      "role": "AI Researcher"
+    },
+    "category": "Machine Learning",
+    "readTime": "10 min read",
+    "date": "Mar 14, 2024",
+    "tags": ["AI", "Machine Learning", "Python"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Machine learning is a subset of artificial intelligence focused on building systems that learn from data."
+      },
+      {
+        "type": "paragraph",
+        "text": "Beginners typically start by exploring supervised learning models like linear regression or decision trees using Python libraries such as scikit-learn."
+      },
+      {
+        "type": "paragraph",
+        "text": "Understanding key concepts like features, labels, overfitting, and model evaluation is essential in your ML journey."
+      }
+    ]
+  },
+
+  {
+    "id": "blog-003",
+    "title": "Cloud Computing: AWS vs Azure vs Google Cloud",
+    "heroImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072",
+    "description": "A comprehensive comparison of the top cloud platforms to help you choose the right one.",
+    "author": {
+      "name": "Mike Chen",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2070",
+      "role": "Cloud Architect"
+    },
+    "category": "Cloud Computing",
+    "readTime": "12 min read",
+    "date": "Mar 13, 2024",
+    "tags": ["Cloud", "AWS", "Azure", "GCP"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "AWS, Azure, and Google Cloud are the three leading cloud platforms, each offering unique services and pricing models."
+      },
+      {
+        "type": "paragraph",
+        "text": "AWS leads in global market share, Azure integrates seamlessly with Microsoft products, and GCP excels in data and AI offerings."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choosing the right platform depends on your specific business needs, compliance requirements, and technical stack."
+      }
+    ]
+  },
+
+  {
+    "id": "blog-004",
+    "title": "Cybersecurity Best Practices for Developers",
+    "heroImage": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070",
+    "description": "Essential security practices every developer should know to build secure applications.",
+    "author": {
+      "name": "Lisa Anderson",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070",
+      "role": "Security Expert"
+    },
+    "category": "Cyber Security",
+    "readTime": "15 min read",
+    "date": "Mar 12, 2024",
+    "tags": ["Security", "DevSecOps", "Best Practices"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Cybersecurity is a critical concern for software developers today, especially in an era of increasing cyber threats."
+      },
+      {
+        "type": "paragraph",
+        "text": "Practices like input validation, proper authentication, secure storage, and least privilege access are essential."
+      },
+      {
+        "type": "paragraph",
+        "text": "Integrating security into your DevOps workflow (DevSecOps) can help catch vulnerabilities early in the SDLC."
+      }
+    ]
+  },
+
+  {
+    "id": "blog-005",
+    "title": "Amazon Web Services (AWS) for Beginners",
+    "heroImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
+    "description": "A beginner's guide to understanding and using AWS for cloud computing.",
+    "author": {
+      "name": "David Kim",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2070",
+      "role": "Cloud Consultant"
+    },
+    "category": "Amazon Web Services",
+    "readTime": "7 min read",
+    "date": "Mar 11, 2024",
+    "tags": ["AWS", "Cloud", "Beginners"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Amazon Web Services is a leading cloud provider offering services like EC2, S3, Lambda, and RDS."
+      },
+      {
+        "type": "paragraph",
+        "text": "Beginners can start by understanding how to host a website or set up a virtual server using EC2."
+      },
+      {
+        "type": "paragraph",
+        "text": "AWS provides a free tier and extensive documentation for developers at every level."
+      }
+    ]
+  },
+
+  {
+    "id": "blog-006",
+    "title": "Quality Management in Software Development",
+    "heroImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
+    "description": "Understanding the principles and practices of quality management in software development.",
+    "author": {
+      "name": "Emma Wilson",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2070",
+      "role": "Quality Analyst"
+    },
+    "category": "Quality Management",
+    "readTime": "20 min read",
+    "date": "Mar 10, 2024",
+    "tags": ["Quality", "Management", "Software"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Software quality management ensures that software meets required standards and performs reliably."
+      },
+      {
+        "type": "paragraph",
+        "text": "It includes practices like quality assurance, quality control, and process improvement."
+      },
+      {
+        "type": "paragraph",
+        "text": "Implementing a strong quality strategy early in development saves time and resources long term."
+      }
+    ]
+  }
+  
+  
+  
+  
+  
+  
+]
