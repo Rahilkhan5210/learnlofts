@@ -35,7 +35,12 @@ const __dirname = path.dirname(__filename);
 
 // Configure CORS before any routes
 app.use(cors({
-    origin: ["http://localhost:5173", "https://your-frontend-domain.onrender.com"],
+    origin: [
+        "http://localhost:5173", 
+        "https://learnlofts.com",
+        "https://www.learnlofts.com",
+        "https://your-frontend-domain.onrender.com"
+    ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
@@ -121,9 +126,16 @@ app.use("/pdfs", (req, res, next) => {
 app.use(express.json());
 app.use(cookieParser());
 
+// Simple root route for backend
 app.get("/", (req, res) => {
-    res.send("Hello, World!");
-})
+    res.json({ 
+        message: "LearnLofts Backend API is running",
+        status: "success",
+        timestamp: new Date().toISOString()
+    });
+});
+
+
 
 // All Api
 app.use("/api/v1/user",userRoutes);

@@ -105,7 +105,7 @@ const PopupForm = () => {
       // Remove isOtherCertificate from submission data
       delete submissionData.isOtherCertificate;
       
-      const response = await axios.post('http://localhost:9000/api/submit-form', submissionData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}/api/submit-form`, submissionData);
       
       if (response.data.success) {
         alert('Thank you! Your information has been submitted successfully.');

@@ -889,14 +889,14 @@ export default function CertificationFullDetails() {
     if (!imagePath) return "/placeholder.png";
     return imagePath.startsWith("http")
       ? imagePath
-      : `http://localhost:9000${imagePath}`;
+      : `${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}${imagePath}`;
   };
 
   const getPdfUrl = (pdfPath) => {
     if (!pdfPath) return null;
     const cleanPath = pdfPath.replace(/^\.+/, '').replace(/^\/+/, '');
     const filename = cleanPath.split('/').pop();
-    return `http://localhost:9000/pdfs/${filename}`;
+    return `${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}/pdfs/${filename}`;
   };
 
   if (isLoading) {

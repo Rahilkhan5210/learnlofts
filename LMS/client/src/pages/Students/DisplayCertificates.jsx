@@ -40,7 +40,7 @@ const DisplayCertificates = () => {
     if (!imagePath) return "/placeholder.png";
     return imagePath.startsWith("http")
       ? imagePath
-      : `http://localhost:9000${imagePath}`;
+      : `${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}${imagePath}`;
   };
 
   // Filter certifications based on selected categories and search query

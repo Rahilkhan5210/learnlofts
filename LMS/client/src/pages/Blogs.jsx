@@ -12,7 +12,7 @@ function BlogsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
-    axios.get("http://localhost:9000/api/v1/blogs")
+          axios.get(`${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}/api/v1/blogs`)
       .then(res => {
          console.log("API /api/v1/blogs response:", res.data); // <-- Add this line
         // Ensure the response is always an array

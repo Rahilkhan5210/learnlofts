@@ -170,7 +170,7 @@ function BlogDetail() {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    axios.get(`http://localhost:9000/api/v1/blogs/${id}`)
+    axios.get(`${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}/api/v1/blogs/${id}`)
       .then(res => {
         setBlog(res.data);
         setLoading(false);

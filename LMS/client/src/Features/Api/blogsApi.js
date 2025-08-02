@@ -1,9 +1,10 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { API_ENDPOINTS } from '../../config/api.js';
 
 export const blogsApi = createApi({
   reducerPath: 'blogsApi',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: 'http://localhost:9000/api/v1/',
+    baseUrl: API_ENDPOINTS.BLOGS_API,
     credentials: 'include',
   }),
   tagTypes: ['Blog'],

@@ -28,11 +28,13 @@ const defaultValues = {
   }
 };
 
+import { API_ENDPOINTS } from '../../config/api.js';
+
 export const certificationApi = createApi({
   reducerPath: "certificationApi",
   tagTypes: ["Certifications"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:9000/api/v1",
+    baseUrl: API_ENDPOINTS.CERTIFICATIONS_API,
     credentials: "include", // Include cookies for authentication if needed
   }),
   endpoints: (builder) => ({

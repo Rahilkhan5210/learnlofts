@@ -1,17 +1,16 @@
 {
-  "name": "learnlofts-backend",
+  "name": "lms-fullstack",
   "version": "1.0.0",
-  "description": "LearnLofts Backend API",
-  "main": "server/index.js",
-  "type": "module",
+  "description": "LMS Full Stack Application",
+  "main": "index.js",
   "scripts": {
-    "start": "cd server && npm start",
-    "dev": "cd server && npm run dev",
-    "install": "cd server && npm install",
-    "build": "cd server && npm install"
+    "build:client": "cd client && npm run build",
+    "copy:build": "Copy-Item -Path \"client\\dist\\*\" -Destination \"server\\\" -Recurse -Force",
+    "build": "npm run build:client && npm run copy:build",
+    "start": "cd server && node index.js",
+    "dev": "cd server && nodemon index.js"
   },
-  "keywords": ["backend", "api", "lms"],
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {}
+  "license": "ISC"
 } 

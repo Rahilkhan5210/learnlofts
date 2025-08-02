@@ -166,7 +166,7 @@ export default function CertificationDropdown({ onMouseLeave }) {
                           <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gray-50">
                             {cert.image && (
                               <img
-                                src={cert.image.startsWith("http") ? cert.image : `http://localhost:9000${cert.image}`}
+                                src={cert.image.startsWith("http") ? cert.image : `${import.meta.env.VITE_API_URL || 'https://learnlofts.onrender.com'}${cert.image}`}
                                 alt={cert.title}
                                 className="w-full h-full object-contain rounded-lg"
                               />
