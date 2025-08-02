@@ -1,0 +1,17 @@
+{
+  "name": "learnlofts-backend",
+  "version": "1.0.0",
+  "description": "LearnLofts Backend API",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install": "cd server && npm install",
+    "build": "cd server && npm install"
+  },
+  "keywords": ["backend", "api", "lms"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+} 
