@@ -1,0 +1,17 @@
+{
+  "name": "learnlofts",
+  "version": "1.0.0",
+  "description": "LearnLofts Full Stack Application",
+  "main": "LMS/server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cd LMS/server && npm start",
+    "dev": "cd LMS/server && npm run dev",
+    "install": "cd LMS/server && npm install",
+    "build": "cd LMS/server && npm install"
+  },
+  "keywords": ["fullstack", "lms", "education"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+} 
